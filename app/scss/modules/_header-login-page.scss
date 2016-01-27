@@ -1,0 +1,32 @@
+/* Header Log In Page*/
+
+/* _header-login-page default */
+@include layout-default {
+	.logo-large {
+		width: 135px;
+		margin: 30px auto;
+		display: block;
+	}
+}
+
+/* _header-login-page small */
+@include layout-small {
+
+}
+
+/* _header-login-page medium */
+@include layout-medium {
+
+}
+
+/* _header-login-page medium-and-above */
+@include layout-medium-and-above {
+	.logo-large {
+		margin: 30px;
+	}
+}
+
+/* _header-login-page large */
+@include layout-large {
+
+}

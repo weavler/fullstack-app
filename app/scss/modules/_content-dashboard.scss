@@ -1,0 +1,82 @@
+/* Dashboard Content */
+
+/* _content-dashboard default */
+@include layout-default {
+
+	.content-dashboard {
+		font-family: 'Roboto', sans-serif;
+		color: #2D2D2D;
+		margin: 10px 10px 0 70px;
+		max-width: 900px;
+	}
+
+	.features-container,
+	.stats-container,
+	.orders-container {
+		padding: 20px;
+		background-color: #FFF;
+		margin-bottom: 10px;
+		text-align: center;
+		box-shadow: 0px 0px 5px -1px rgba(204, 204, 204, 0.8);
+	}
+
+	.stats {
+		font-family: 'Ubuntu Titling', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #4C4C4C;
+	}
+
+	.stats-counter {
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		background: $weavler-orange;
+		margin: 0 auto;
+		line-height: 60px;
+		color: #FFF;
+		font-size: 1.2em;
+	}
+
+}
+
+/* _content-dashboard small */
+@include layout-small {
+
+}
+
+/* _content-dashboard medium */
+@include layout-medium {
+
+}
+
+/* _content-dashboard medium-and-above */
+@include layout-medium-and-above {
+	.content-dashboard {
+		margin: 30px auto;
+	}
+	
+	.stats-container,
+	.orders-container {
+		width: 40%;
+		display: inline-block;
+		height: 340px;
+		margin: 7px;
+		vertical-align: bottom;
+	}
+
+	.features-container {
+		width: 100%;
+	}
+
+	.stats {
+		display: inline-block;
+		margin: 20px;
+	}
+}
+
+/* _module large */
+@include layout-large {
+	
+}

@@ -1,0 +1,43 @@
+/* Base */
+
+/* _base default */
+@include layout-default {
+	body { margin: 0; }
+	footer { display: none; }
+	a { text-decoration: none; }
+
+	.body-signin {
+		background: url('../img/background22.jpg');
+		background-size: cover;
+	}
+
+	.body-signed-in {
+		background-image: none;
+		background-color: $gray;
+	}
+
+	.container { 
+		height: 100vh;
+		position: relative;
+	}
+}
+
+/* _base small */
+@include layout-small {
+
+}
+
+/* _base medium */
+@include layout-medium {
+
+}
+
+/* _base medium-and-above */
+@include layout-medium-and-above {
+
+}
+
+/* _base large */
+@include layout-large {
+
+}

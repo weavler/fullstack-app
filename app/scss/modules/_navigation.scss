@@ -1,0 +1,139 @@
+/* Navigation, Menus*/ 
+
+/* _navigation default */
+@include layout-default {
+	/* Dashboard Nav Menus */
+	nav ul {
+		list-style: none;
+	}
+
+	.nav-sideboard-left_menu-item,
+	.nav-sideboard-right_menu-item {
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	
+	/* Nav Left Sideboard Menu */
+	.nav-sideboard-left {
+		background: #FFF;
+		width: 60px;
+		height: 100%;
+		position: absolute;
+		top: 10px;
+		left: 0;
+		box-shadow: 2px 0px 5px 1px rgba(153,153,153,.2);
+	}
+
+	.nav-sideboard-left_menu {
+		display: inline-block;
+		padding-left: 0;
+		margin: 60px 0 0 5px;
+	}
+
+	.nav-sideboard-left_menu-item {
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		margin: 0 5px 10px 5px;
+		background-color: $darkgray;
+	}
+	
+	.menu-expanded {
+		width: 180px;
+	}
+
+	.span-menu-expanded {
+    position: absolute;
+    right: 40px;
+    line-height: 45px;
+	}
+
+	.nav-sideboard-left_menu .menu-expanded {
+		display: none;
+		transition: all 1s ease-in-out;
+	}
+
+	/*.menu-expanded:hover .span-menu-expanded {
+		display: block;
+	}*/
+
+	/* Nav Right Sideboard Menu */
+	.nav-sideboard-right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 60px;
+	}
+	
+	.nav-sideboard-right_menu {
+		padding: 0;
+		margin: 10px;
+	}
+
+	.nav-sideboard-right_menu li {
+		display: inline-block;
+		margin-right: 5px;
+	}
+
+	.nav-sideboard-right_menu-item {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background-color: $gray;
+	}
+
+	.nav-sideboard-right_menu-dropdown {
+		display: none;
+	}
+}
+
+/* _navigation small */
+@include layout-small {
+
+}
+
+/* _navigation medium */
+@include layout-medium {
+
+}
+
+/* _navigation medium-and-above */
+@include layout-medium-and-above {
+	.nav-sideboard-right {
+		height: 80px;
+	}
+
+	.nav-sideboard-left {
+		width: 80px;
+		top: 20px;
+	}
+
+	.nav-sideboard-right_menu {
+		margin: 5px;
+	}
+
+	.nav-sideboard-left_menu {
+
+	}
+
+	.nav-sideboard-left_menu-item,
+	.nav-sideboard-right_menu-item {
+		height: 55px;
+		width: 55px;
+	}
+	
+	.menu-expanded {
+		width: 250px;
+	}
+	
+	.span-menu-expanded {
+		right: 75px;
+		line-height: 60px;
+	}
+}
+
+/* _navigation large */
+@include layout-large {
+
+}

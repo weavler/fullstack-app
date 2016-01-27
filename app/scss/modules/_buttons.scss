@@ -1,0 +1,78 @@
+/* Buttons */
+
+/* _buttons default */
+@include layout-default {
+	/* Login Page Buttons */
+	.btn-form {
+    font-family: 'Lato',sans-serif;
+    font-size: .9em;
+		text-transform: uppercase;
+		font-weight: 500;
+		border: none;
+		padding: 13px 55px;
+    margin: 10px;
+    width: 180px;
+    background-color: $weavler-orange;
+    color: #525252;
+    letter-spacing: .5px;
+    position: relative;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+}
+
+/* _buttons small */
+@include layout-small {
+
+}
+
+/* _buttons medium */
+@include layout-medium {
+
+}
+
+/* _buttons medium-and-above */
+@include layout-medium-and-above {
+
+}
+
+/* _buttons large */
+@include layout-large {
+	.btn-form {
+    border: 3px solid $weavler-orange;
+		background-color: transparent;
+		color: #FFF;
+	}
+	
+	.btn-form:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 0%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: $weavler-orange;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.btn-form:hover {
+		//background: $weavler-orange;
+		color: #525252;
+		text-shadow: none;
+		
+	}
+	
+	.btn-form:active {
+		background-color: $weavler-orange;
+		color: #525252;
+	}
+
+	.btn-form:hover:after,
+	.btn-form:active:after {
+		width: 100%;
+	}
+}

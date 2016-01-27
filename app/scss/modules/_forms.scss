@@ -1,0 +1,49 @@
+/* Forms */
+
+/* _forms default */
+@include layout-default {
+  // Put all default (i.e small) styles in here, and not outside the layout-default mixin.
+	input {
+		border: 2px solid #FF9900;
+		margin: 10px;
+	  padding: 10px 10px;
+	  font-size: 0.8em;
+		background-color: transparent;
+		color: #DDD;
+		font-family: 'Work Sans', sans-serif;
+	}
+
+	.form-signup, .form-signin {
+		visibility: hidden;
+		position: absolute;
+		left: 16%;
+		right: 16%;
+		top: 50%
+	}
+
+	.btn-clicked {
+		visibility: visible;
+	}
+}
+
+/* _forms small */
+@include layout-small {
+
+}
+
+/* _forms medium */
+@include layout-medium {
+
+}
+
+/* _forms medium-and-above */
+@include layout-medium-and-above {
+	.form-signup, .form-signin {
+		top: 100%
+	}
+}
+
+/* _forms large */
+@include layout-large {
+
+}

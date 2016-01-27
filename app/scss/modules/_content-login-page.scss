@@ -1,0 +1,40 @@
+/* Sign In Page Content */ 
+
+/* _content-login-page default */
+@include layout-default {
+	/* Sign In */
+	.content-signin {
+		text-align: center;
+		//background: rgba(103, 48, 103, 0.6);
+		padding: 35px;
+		margin-top: 14%;
+	}
+}
+
+/* _content-login-page small */
+@include layout-small {
+
+}
+
+/* _content-login-page medium */
+@include layout-medium {
+
+}
+
+/* _content-login-page medium-and-above */
+@include layout-medium-and-above {
+	/* Content Sign In */
+	.content-signin {
+		margin-top: 0;
+		width: 100%;
+		position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+}
+
+/* _content-login-page large */
+@include layout-large {
+
+}
