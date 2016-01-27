@@ -1,7 +1,6 @@
 /* Needed gulp config */
-var gulp = require('gulp');  
+var gulp = require('gulp');
 var sass = require('gulp-sass');
-//var sass = require('gulp-ruby-sass');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var notify = require('gulp-notify');
@@ -25,7 +24,7 @@ gulp.task('scripts', function() {
 });
 
 /* Sass task */
-gulp.task('sass', function () {  
+gulp.task('sass', function () {
     gulp.src('app/scss/style.scss')
     .pipe(plumber())
     .pipe(sass({
@@ -47,11 +46,9 @@ gulp.task('bs-reload', function () {
 /* Prepare Browser-sync for localhost */
 gulp.task('browser-sync', function() {
     browserSync.init(['css/*.css', 'js/*.js'], {
-        proxy: 'localhost:8888/weavler/fullstack-app/app'
-        /*server: {
-            baseDir: './'
-        }*/
-        
+        server: {
+            baseDir: './app'
+        }
     });
 });
 
@@ -64,3 +61,5 @@ gulp.task('default', ['sass', 'browser-sync'], function () {
     /* Watch .html files, run the bs-reload task on change. */
     gulp.watch(['*.html'], ['bs-reload']);
 });
+
+
