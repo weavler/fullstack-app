@@ -1,4 +1,3 @@
-/* Needed gulp config */
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
@@ -11,7 +10,13 @@ var browserSync = require('browser-sync');
 var neat = require('node-neat').includePaths;
 var reload = browserSync.reload;
 
-/* Scripts task */
+// Copies index.html to 'dist' directory
+gulp.task('copy', function() {
+  return gulp.src('app/index.html')
+    .pipe(gulp.dest('app/dist'));
+});
+
+// Scripts task 
 gulp.task('scripts', function() {
   return gulp.src([
     'app/js/script.js'
@@ -23,7 +28,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('app/js'));
 });
 
-/* Sass task */
+// Sass task 
 gulp.task('sass', function () {
     gulp.src('app/scss/style.scss')
     .pipe(plumber())
@@ -34,17 +39,17 @@ gulp.task('sass', function () {
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('app/css'))
-    /* Reload the browser CSS after every change */
+    // Reload the browser CSS after every change 
     .pipe(reload({stream:true}));
 });
 
-/* Reload task */
+// Reload task 
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-/* Prepare Browser-sync for localhost */
-gulp.task('browser-sync', function() {
+// Prepare browser-sync for localhost 
+gulp.task('serve', ['copy', 'scripts', 'sass'], function() {
     browserSync.init(['css/*.css', 'js/*.js'], {
         server: {
             baseDir: './app'
@@ -52,13 +57,10 @@ gulp.task('browser-sync', function() {
     });
 });
 
-/* Watch scss, js and html files, doing different things with each. */
-gulp.task('default', ['sass', 'browser-sync'], function () {
-    /* Watch scss, run the sass task on change. */
+// Watch scss, js and html files, doing different things with each. 
+gulp.task('default', ['serve'], function () {
     gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass'])
-    /* Watch script.js file, run the scripts task on change. */
     gulp.watch(['app/js/script.js'], ['scripts'])
-    /* Watch .html files, run the bs-reload task on change. */
     gulp.watch(['*.html'], ['bs-reload']);
 });
 
