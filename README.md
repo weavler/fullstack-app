@@ -1,4 +1,6 @@
-# Fullstack Application
+# Fullstack Application (Interns Playground)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/31053f0ae2b547e2ba9514f2d9a75a04)](https://www.codacy.com/app/prem/fullstack-app)
 
 ### Tech
 
