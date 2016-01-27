@@ -31,10 +31,10 @@ gulp.task('sass', function () {
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('app/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('app/css'))
     /* Reload the browser CSS after every change */
     .pipe(reload({stream:true}));
 });
