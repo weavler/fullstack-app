@@ -24,9 +24,25 @@ var paths = {
   views: 'app/views/**/*', htmls: ['app/index.html', 'app/views/*.*' ]
 };
 
+// Copies images to static folder
+gulp.task('images', function () {
+  return gulp.src(paths.images)
+    .pipe(gulp.dest('static/img'));
 });
 
 // Scripts task 
+// Copies images to static folder
+gulp.task('fonts', function () {
+  return gulp.src(paths.fonts)
+    .pipe(gulp.dest('static/fonts'));
+});
+
+// Copies images to static folder
+gulp.task('views', function () {
+  return gulp.src(paths.views)
+    .pipe(gulp.dest('templates/views'));
+});
+
 gulp.task('scripts', function() {
   return gulp.src([
     'app/js/script.js'
