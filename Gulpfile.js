@@ -13,10 +13,6 @@ var browserSync = require('browser-sync');
 var neat = require('node-neat').includePaths;
 var reload = browserSync.reload;
 
-// Copies index.html to 'dist' directory
-gulp.task('copy', function() {
-  return gulp.src('app/index.html')
-    .pipe(gulp.dest('app/dist'));
 /* Paths for the assets folder */
 var paths = {
   scripts: 'app/js/**/*.js', fonts: 'app/fonts/**/*',
@@ -41,6 +37,12 @@ gulp.task('fonts', function () {
 gulp.task('views', function () {
   return gulp.src(paths.views)
     .pipe(gulp.dest('templates/views'));
+});
+
+// Copies index.html to 'templates' directory
+gulp.task('copy', ['images', 'fonts', 'views'], function () {
+  return gulp.src(paths.htmls)
+    .pipe(gulp.dest('templates'));
 });
 
 gulp.task('scripts', function() {
