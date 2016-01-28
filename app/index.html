@@ -5,14 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Weavler</title>
 	<!-- Just for the purpose of python assests-->
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.min.css')}}">
+	<link rel="stylesheet" href="static/css/style.min.css">
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,,500' rel='stylesheet' type='text/css'>
 </head>
 	<body class="body-signin">
 		<div class="container">
 			<header>
-				<img class="logo-large" src="{{ url_for('static', filename='img/logo-large.svg')}}" alt="logo">
+				<img class="logo-large" src="static/img/logo-large.svg" alt="logo">
 			</header>
 			<div class="content-signin">
 				<div class="modal">
@@ -20,7 +20,7 @@
 					<p>Shabby chic tousled butcher, asymmetrical pickled authentic photo booth godard offal bicycle rights ugh. Tousled twee man braid, jean shorts humblebrag neutra hammock everyday.</p>
 				</div>
 				<button class="btn-form btn-signin">Log in</button>
-				<form class="form-signin" action="pages/dashboard.html" method="get">
+				<form class="form-signin" action="" method="post">
 				  <input type="text" name="email" placeholder="Your email"><br>
 				  <input type="text" name="password" placeholder="Your password"><br>
 				  <input class="btn-form submit-signin" type="submit" value="submit">
@@ -34,6 +34,6 @@
 		</div>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-		<script src="{{ url_for('static', filename='js/script.min.js')}}"">
+		<script src="static/js/allscripts.min.js"></script>
 	</body>
 </html>
