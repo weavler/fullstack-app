@@ -26,7 +26,6 @@ gulp.task('images', function () {
     .pipe(gulp.dest('static/img'));
 });
 
-// Scripts task 
 // Copies images to static folder
 gulp.task('fonts', function () {
   return gulp.src(paths.fonts)
@@ -45,15 +44,14 @@ gulp.task('copy', ['images', 'fonts', 'views'], function () {
     .pipe(gulp.dest('templates'));
 });
 
+// Scripts task
 gulp.task('scripts', function() {
-  return gulp.src([
-    'app/js/script.js'
-    ])
-    .pipe(concat('script.js'))
-    .pipe(gulp.dest('app/js'))
+  return gulp.src(paths.scripts)
+    .pipe(concat('allscripts.js'))
+    .pipe(gulp.dest('static/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
+    .pipe(gulp.dest('static/js'));
 });
 
 // Sass task 
