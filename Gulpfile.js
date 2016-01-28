@@ -17,6 +17,13 @@ var reload = browserSync.reload;
 gulp.task('copy', function() {
   return gulp.src('app/index.html')
     .pipe(gulp.dest('app/dist'));
+/* Paths for the assets folder */
+var paths = {
+  scripts: 'app/js/**/*.js', fonts: 'app/fonts/**/*',
+  images: 'app/img/**/*', index: 'app/index.html',
+  views: 'app/views/**/*', htmls: ['app/index.html', 'app/views/*.*' ]
+};
+
 });
 
 // Scripts task 
