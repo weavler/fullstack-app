@@ -54,18 +54,18 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('static/js'));
 });
 
-// Sass task 
+// Sass task
 gulp.task('sass', function () {
     gulp.src('app/scss/style.scss')
     .pipe(plumber())
     .pipe(sass({
         includePaths: ['scss'].concat(neat)
     }))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('static/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('app/css'))
-    // Reload the browser CSS after every change 
+    .pipe(gulp.dest('static/css'))
+    // Reload the browser CSS after every change
     .pipe(reload({stream:true}));
 });
 
