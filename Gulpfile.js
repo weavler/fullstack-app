@@ -69,16 +69,16 @@ gulp.task('sass', function () {
     .pipe(reload({stream:true}));
 });
 
-// Reload task 
+// Reload task
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-// Prepare browser-sync for localhost 
+// Prepare browser-sync for localhost
 gulp.task('serve', ['copy', 'scripts', 'sass'], function() {
     browserSync.init(['css/*.css', 'js/*.js'], {
         server: {
-            baseDir: './app'
+            baseDir: ['templates', 'static']
         }
     });
 });
