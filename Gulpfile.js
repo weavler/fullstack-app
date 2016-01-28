@@ -83,11 +83,9 @@ gulp.task('serve', ['copy', 'scripts', 'sass'], function() {
     });
 });
 
-// Watch scss, js and html files, doing different things with each. 
+// Watch scss, js and html files, doing different things with each.
 gulp.task('default', ['serve'], function () {
-    gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass'])
-    gulp.watch(['app/js/script.js'], ['scripts'])
+    gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass']);
+    gulp.watch(['app/js/script.js'], ['scripts']);
     gulp.watch(['*.html'], ['bs-reload']);
 });
-
-
