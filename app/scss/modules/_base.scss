@@ -7,7 +7,6 @@
 	a { text-decoration: none; }
 
 	.body-signin {
-		background: url('../assets/img/background.jpg');
 		background: url('../img/background.jpg');
 		background-size: cover;
 	}
@@ -17,7 +16,7 @@
 		background-color: $gray;
 	}
 
-	.container { 
+	.container {
 		height: 100vh;
 		position: relative;
 	}
