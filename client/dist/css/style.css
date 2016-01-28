@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Ubuntu Titling";
-  src: url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
+  src: url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
 
 /* Easings */
 /* Window Breakpoints */
@@ -367,7 +367,7 @@ th {
 /* Typography */
 @font-face {
   font-family: "Ubuntu Titling";
-  src: url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
+  src: url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
 
 /* Modules */
 /* Base */
@@ -382,7 +382,7 @@ a {
   text-decoration: none; }
 
 .body-signin {
-  background: url("../img/background.jpg");
+  background: url("../assets/img/background.jpg");
   background-size: cover; }
 
 .body-signed-in {
@@ -627,7 +627,7 @@ input {
   /* Typography */
   @font-face {
     font-family: "Ubuntu Titling";
-    src: url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
+    src: url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
   /* Modules */
   /* Base */
   /* _base default */
@@ -689,7 +689,7 @@ input {
   /* Typography */
   @font-face {
     font-family: "Ubuntu Titling";
-    src: url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
+    src: url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
   /* Modules */
   /* Base */
   /* _base default */
@@ -751,7 +751,7 @@ input {
   /* Typography */
   @font-face {
     font-family: "Ubuntu Titling";
-    src: url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
+    src: url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
   /* Modules */
   /* Base */
   /* _base default */
@@ -862,7 +862,7 @@ input {
   /* Typography */
   @font-face {
     font-family: "Ubuntu Titling";
-    src: url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
+    src: url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.eot") format("eot"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.woff") format("woff"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.ttf") format("truetype"), url("../assets/fonts/ubuntutitling/UbuntuTitling-Bold-webfont.svg") format("svg"); }
   /* Modules */
   /* Base */
   /* _base default */
